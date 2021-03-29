@@ -1,0 +1,23 @@
+{
+    "name": "ch06",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-button": "./node_modules/.bin/babel button/jsx -d button/js -w",
+        "build-mouse-capture": "./node_modules/.bin/babel mouse-capture/jsx -d mouse-capture/js -w",
+        "build": "npm run build-button && npm run build-mouse-capture"
+    },
+    "author": "",
+    "license": "ISC",
+    "babel": {
+        "presets": [
+            "react"
+        ]
+    },
+    "devDependencies": {
+        "babel-cli": "^6.9.0",
+        "babel-preset-react": "^6.5.0"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "ch03",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-hello-js-world-jsx": "./node_modules/.bin/babel hello-js-world-jsx/jsx/script.jsx -o hello-js-world-jsx/js/script.js",
+        "build-hello-world-class-jsx": "./node_modules/.bin/babel hello-world-class-jsx/jsx/script.jsx -o hello-world-class-jsx/js/script.js",
+        "build-method": "./node_modules/.bin/babel method/jsx/script.jsx -o method/js/script.js",
+        "build": "npm run build-hello-js-world-jsx & npm run build-hello-world-class-jsx & npm run build-method"
+    },
+    "author": "",
+    "license": "ISC",
+    "babel": {
+        "presets": [
+            "react"
+        ]
+    },
+    "devDependencies": {
+        "babel-cli": "^6.9.0",
+        "babel-preset-react": "^6.5.0"
+    }
+}
