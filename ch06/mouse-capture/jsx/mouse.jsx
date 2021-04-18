@@ -3,12 +3,12 @@ class Mouse extends React.Component {
         return (
             <div>
                 <div
-                    style={{ boarder: '1px solid red' }}
+                    style={{ border: '1px solid red' }}
                     onMouseOverCapture={((event) => {
                         console.log('mouse over on capture event')
                         console.dir(event, this)
                     }).bind(this)}
-                    style={{ boarder: '1px solid red' }}
+                    style={{ border: '1px solid red' }}
                     onMouseOver={((event) => {
                         console.log('mouse over on bubbling event')
                         console.dir(event, this)
