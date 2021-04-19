@@ -10,6 +10,7 @@
         "build-mouse-event": "./node_modules/.bin/babel mouse-event/jsx -d mouse-event/js -w",
         "build-onclick-parent": "./node_modules/.bin/babel onclick-parent/jsx -d onclick-parent/js -w",
         "build-radio": "./node_modules/.bin/babel radio/jsx -d radio/js -w",
+        "build-slider": "./node_modules/.bin/babel slider/jsx -d slider/js -w",
         "build": "npm run build-button && npm run build-mouse-capture"
     },
     "author": "",
