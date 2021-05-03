@@ -12,10 +12,13 @@
 
         <script>
             $(function () {
+                //  jQuery 슬라이더에 적용하여 사용자 정의 이벤트를 전달할 이벤트 핸들러를 생성한다.
                 let handleChange = (e, ui) => {
+                    //  사용자 정의 이벤트를 생성한다.
                     var slideEvent = new CustomEvent('slide', {
                         detail: { ui: ui, jQueryEvent: e },
                     })
+                    //  이벤트를 window로 전달한다.
                     window.dispatchEvent(slideEvent)
                 }
                 $('#slider').slider({
@@ -32,6 +35,7 @@
             <div id="slider"></div>
             <div id="content"></div>
             <script src="js/slider-buttons.js"></script>
+            <script src="js/slider-value.js"></script>
             <script src="js/script.js"></script>
         </div>
     </body>

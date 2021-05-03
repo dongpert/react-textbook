@@ -2,6 +2,8 @@ class SliderButtons extends React.Component {
     constructor(props) {
         super(props)
         this.state = { sliderValue: 0 }
+        this.handleSlide = this.handleSlide.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
     handleSlide(event, ui) {
         this.setState({ sliderValue: ui.value })
@@ -31,7 +33,7 @@ class SliderButtons extends React.Component {
                     disabled={this.state.sliderValue > 99 ? true : false}
                     className='btn default-btn'
                     onClick={this.handleChange(1)}>
-                    1 More ({this.state.sliderValue + 1})f
+                    1 More ({this.state.sliderValue + 1})
                 </button>
             </div>
         )

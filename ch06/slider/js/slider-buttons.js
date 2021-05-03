@@ -2,6 +2,8 @@ class SliderButtons extends React.Component {
     constructor(props) {
         super(props);
         this.state = { sliderValue: 0 };
+        this.handleSlide = this.handleSlide.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
     handleSlide(event, ui) {
         this.setState({ sliderValue: ui.value });
