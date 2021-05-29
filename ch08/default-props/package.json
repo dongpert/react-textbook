@@ -1,0 +1,20 @@
+{
+    "name": "ch06",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "./node_modules/.bin/babel jsx -d js -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "babel": {
+        "presets": [
+            "react"
+        ]
+    },
+    "devDependencies": {
+        "babel-cli": "^6.9.0",
+        "babel-preset-react": "^6.5.0"
+    }
+}
